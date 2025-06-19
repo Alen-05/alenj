@@ -19,6 +19,20 @@
   <button onclick="subtractNumbers()">Subtract</button>
 
   <h3 id="result"></h3>
+   <script>
+    function subtractNumbers() {
+      // Get values from inputs
+      var n1 = parseFloat(document.getElementById("num1").value);
+      var n2 = parseFloat(document.getElementById("num2").value);
+      var n3 = parseFloat(document.getElementById("num3").value);
+
+      // Subtract the numbers
+      var result = n1 - n2 - n3;
+
+      // Show the result
+      document.getElementById("result").innerText = "Result: " + result;
+    }
+  </script>
 
  
 
